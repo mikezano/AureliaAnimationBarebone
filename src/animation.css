@@ -1,0 +1,95 @@
+.square{
+	width:100px;
+	height:100px;
+	background-color:red;
+
+}
+.blue-square{
+	width:50px;
+	height:50px;
+	background-color:blue;
+}
+
+.animate-in-add{
+	-webkit-animation: grow 5.5s;
+	animation: grow 5.5s;
+}
+.random{
+	font-size:48px;
+	background-color:green;
+	width:200px;
+}
+
+.random .au-enter{
+	opacity: 0!important;
+}
+
+.random .au-enter-active{
+    -webkit-animation: fadeInRight 10.5s;
+    animation: fadeInRight 10.5s;
+}
+
+.random .au-leave-active{
+    -webkit-animation: fadeOut 0.5s;
+    animation: fadeOut 0.5s;
+}
+
+/* animation definitions */
+@-webkit-keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0)
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    -ms-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0)
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none
+  }
+}
+
+@-webkit-keyframes grow {
+	0%{transform:scale(1.2);}
+    100%{transform:scale(1.7);}
+}
+
+@keyframes grow {
+	0%{transform:scale(1.2);}
+    100%{transform:scale(1.7);}
+}
+
+
+@-webkit-keyframes fadeIn {
+	0%{opacity:1;}
+    100% { opacity:1; }
+}
+
+@keyframes fadeIn {
+	0%{opacity:1;}
+	100% { opacity:1; }
+}
+
+@-webkit-keyframes fadeOut {
+    0%   { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+@keyframes fadeOut {
+    0%   { opacity: 1; }
+    100% { opacity: 0; }
+}

@@ -1,0 +1,19 @@
+<template>
+	<section class="au-animate">
+		<link rel="stylesheet" href="animation.css">
+		<button click.trigger="showMe()">ShowMe</button>
+		<div class="blue-square" ref="blueSquare"></div>
+		<div class="random">
+			<div class="au-animate" repeat.for="numb of numbers">${numb}</div>
+		</div>
+		<div ref="square" class="square"></div>
+	</section>
+
+   <section>
+        <ul class="aurelia-animators">
+            <li class="au-animate" repeat.for="numb of numbers">
+            <i class="fa fa-trash" click.delegate="$parent.removeAnimator(numb)"> click</i> ${numb}
+            </li>
+        </ul>
+    </section>	
+</template>
