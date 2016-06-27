@@ -15,5 +15,39 @@
             <i class="fa fa-trash" click.delegate="$parent.removeAnimator(numb)"> click</i> ${numb}
             </li>
         </ul>
-    </section>	
+    </section>
+
+	
+  <!--<require from="animation.css"></require>-->
+    <link rel="stylesheet" href="styles/animation.css">
+    <link rel="stylesheet" href="src/test.css">
+    <link rel="stylesheet" href="styles/mainModuleCurtains.css">
+    <link rel="stylesheet" href="styles/mainModuleTriangles.css">
+     <!--<require from="animation.css"></require>-->
+
+
+<div class="white-background" ref="whiteSquare"></div>
+  <h1>Zano</h1>
+  <div id="perspective-container">
+      <div id="zano-container" ref="myDiv">
+
+
+          <div id="current-page"></div>
+          <div id="bottom-left-curtain"   ref="leftCurtain"></div>
+          <div id="top-right-curtain"     ref="rightCurtain"></div>
+          <div id="bottom-left-triangle"  ref="leftTriangle"></div>
+          <div id="top-right-triangle"    ref="rightTriangle"></div>
+
+          {{vm.currentPage}}
+          <div id="menu">
+              <ul>
+                  <li class="item1" ng-click="vm.changePage($event)">LINK1</li>
+                  <li class="item2" ng-click="vm.changePage($event)">LINK2</li>
+                  <li class="item3" ng-click="vm.changePage($event)">LINK3</li>
+                  <li class="item4" ng-click="vm.changePage($event)">PROJECTS</li>
+              </ul>
+          </div>
+      </div>
+
+  </div>		
 </template>
